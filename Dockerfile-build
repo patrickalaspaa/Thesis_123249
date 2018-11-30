@@ -1,0 +1,10 @@
+FROM ubuntu:18.10
+ADD backend /home/spotapp
+
+# Install dependencies
+RUN apt-get update;
+RUN apt-get install -y leiningen;
+
+WORKDIR "/home/spotapp/"
+
+CMD lein uberjar

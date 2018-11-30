@@ -1,0 +1,6 @@
+CREATE TABLE SpotType (
+  Id int(11) NOT NULL AUTO_INCREMENT,
+  Type varchar(100) DEFAULT NULL,
+  PRIMARY KEY (Id),
+  UNIQUE KEY Type (Type)
+)
